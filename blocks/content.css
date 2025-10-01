@@ -1,0 +1,16 @@
+.content {
+  margin: 0 148px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    margin: 0 24px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .content {
+    margin: 0 16px;
+    min-width: 288px;
+  }
+}
