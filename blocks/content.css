@@ -1,10 +1,14 @@
 .content {
-  margin: 0 148px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
 }
 
 @media screen and (max-width: 1024px) {
   .content {
-    margin: 0 24px;
+    padding: 24px;
   }
 }
 
@@ -12,5 +16,6 @@
   .content {
     margin: 0 16px;
     min-width: 288px;
+    padding: 0;
   }
 }

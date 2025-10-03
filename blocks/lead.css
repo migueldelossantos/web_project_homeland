@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
+  width: 100%;
 }
 
 .lead__title {
