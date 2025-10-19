@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-.place {
+.places__content {
   display: grid;
   grid-template-columns: 460px 484px;
   grid-template-areas:
@@ -14,7 +14,7 @@
   margin-top: 80px;
 }
 
-.place__title {
+.places__title {
   grid-area: title;
   margin: 0;
   font-size: 72px;
@@ -23,7 +23,7 @@
   text-align: left;
 }
 
-.place__authors {
+.places__authors {
   grid-area: authors;
   display: flex;
   flex-direction: column;
@@ -31,33 +31,33 @@
   align-items: flex-start;
 }
 
-.place__author-title {
+.places__author-title {
   margin: 0;
   font-size: 12px;
   color: #aaaaaa;
 }
 
-.place__author {
+.places__author {
   margin: 0;
   font-size: 18px;
   line-height: 1.2;
 }
 
-.place__image {
+.places__image {
   grid-area: image;
   max-width: 460px;
   max-height: 460px;
 }
 
-.place__image:hover {
+.places__image:hover {
   opacity: 0.5;
 }
 
-.place__description {
+.places__description {
   grid-area: description;
 }
 
-.place__text {
+.places__text {
   margin: 0;
   font-size: 18px;
   line-height: 1.5;
@@ -65,7 +65,7 @@
   margin-bottom: 25px;
 }
 
-.place__button {
+.places__button {
   grid-area: button;
   max-width: 300px;
   min-height: 48px;
@@ -75,33 +75,33 @@
   background: linear-gradient(to right, #0278fe, #003a7b);
 }
 
-.place__button:hover {
+.places__button:hover {
   opacity: 0.8;
 }
 
 @media screen and (max-width: 1024px) {
-  .place {
+  .places__content {
     grid-template-columns: 340px 350px;
   }
 
-  .place__image {
-    max-width: 340px;
-    max-height: 340px;
+  .places__image {
+    width: 340px;
+    height: 340px;
   }
 
-  .place__title {
+  .places__title {
     font-size: 42px;
     line-height: 46px;
   }
 
-  .place__text {
+  .places__text {
     font-size: 16px;
     line-height: 1.6;
   }
 }
 
 @media screen and (max-width: 544px) {
-  .place {
+  .places__content {
     grid-template-columns: 1fr;
     grid-template-areas:
       "title"
@@ -112,33 +112,33 @@
     gap: 24px 0;
   }
 
-  .place__image {
+  .places__image {
     max-width: 320px;
     max-height: 320px;
   }
 
-  .place__title {
+  .places__title {
     font-size: 32px;
     line-height: 35px;
     padding: 10px;
   }
 
-  .place__author-title {
+  .places__author-title {
     padding: 0 10px;
   }
 
-  .place__author {
+  .places__author {
     padding: 0 10px;
   }
 
-  .place__text {
+  .places__text {
     font-size: 14px;
     line-height: 1.6;
     text-align: left;
     padding: 0 10px;
   }
 
-  .place__button {
+  .places__button {
     margin: 0 10px;
   }
 }
